@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.inputbox{
+    width: 368px;
+    margin-top: 40px !important;
+}
+
+.reglink{
+    font-family: 'Nunito', sans-serif;
+    font-size: 13.34px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.reglink a{
+    color: #EA6C00;
+    font-weight: 700;
+}
+
+.logo-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+}
+
+.reginput{
+    position: relative;
+}
+
+.eyeicon{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.eyelogin{
+    position: absolute;
+    top: 290px;
+    right: 520px;
+
+}
+
+.searchBox::placeholder{
+    padding-left: 20px;
+    text-align: left;
 }

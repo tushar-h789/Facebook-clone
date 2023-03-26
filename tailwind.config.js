@@ -4,14 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': '#7000A5',
+        primary: "#0D8BF0",
+        black: "#303131"
       },
       fontFamily:{
         nun: ['Nunito', 'sans-serif']
       },
-      colors:{
-        primary: "#0D8BF0"
-      }
     },
   },
   

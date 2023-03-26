@@ -41,21 +41,19 @@ const Home = () => {
 
   return (
     <>
-      <Grid container spacing={3}>
-  <Grid item xs >
-    <div>
-      <HomeLeftPart/>
-    </div>
-  </Grid>
-  <Grid item xs={6}>
-    <HomeMiddlePart/>
-  </Grid>
-  <Grid item xs >
-    <div>
-      <HomeRightPart/>
-    </div>
-  </Grid>
-</Grid>
+      <Grid container spacing={3} className="bg-[#F0F2F5]">
+        <Grid item xs>
+          <HomeLeftPart />
+        </Grid>
+
+        <Grid item xs={6}>
+          <HomeMiddlePart />
+        </Grid>
+
+        <Grid item xs>
+          <HomeRightPart />
+        </Grid>
+      </Grid>
       {/* <button onClick={handleLogout}>Logout</button> */}
     </>
   );

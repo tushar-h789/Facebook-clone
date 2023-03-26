@@ -1,13 +1,17 @@
-import React from 'react'
+import React from "react";
+
+import MiddlePostPart from "./MiddlePostPart";
+import MiddleStatusPart from "./MiddleStatusPart";
 
 const HomeMiddlePart = () => {
   return (
-    <div>
-        <div className='w-[573px] h-[125px] bg-white  mt-4 rounded-lg drop-shadow-lg'>
-            <img src='assets/pro.png'/>
-        </div>
-    </div>
-  )
-}
+   <>
+   <div>
+    <MiddlePostPart/>
+    <MiddleStatusPart/>
+   </div>
+   </>
+  );
+};
 
-export default HomeMiddlePart
+export default HomeMiddlePart;

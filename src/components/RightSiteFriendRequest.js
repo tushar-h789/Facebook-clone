@@ -1,6 +1,7 @@
 import React from 'react'
 import Heading from './Heading'
 import PeopleFriendRequest from './PeopleFriendRequest'
+import Underline from './Underline'
 
 const RightSiteFriendRequest = () => {
   return (
@@ -12,7 +13,8 @@ const RightSiteFriendRequest = () => {
             <a href='#' className='mr-8 text-primary'>See All</a>
     </div>
 
-    <PeopleFriendRequest/>
+    <PeopleFriendRequest title="Tushar" accept="Confirm" delete="Delete"/>
+    <Underline className="rightSiteUnderline"/>
     </>
   )
 }

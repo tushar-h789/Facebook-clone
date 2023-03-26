@@ -13,7 +13,7 @@ const CreateGroup = () => {
             <Heading title="Create Group"/>
         </h3>
     </div>
-        <Underline/>
+        <Underline className="rightSiteUnderline"/>
     </>
   )
 }

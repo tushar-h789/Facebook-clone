@@ -11,6 +11,8 @@ import Home from "./components/Home";
 import Login from "./pages/Login";
 import RootLayout from "./components/RootLayout";
 import Messege from "./pages/Messege";
+import Friends from "./pages/Friends";
+import Groups from "./pages/Groups";
 
 let router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,7 +21,9 @@ let router = createBrowserRouter(
       <Route path="/login" element={<Login />}></Route>
       <Route path="/facebook" element={<RootLayout />}>
         <Route index element={<Home />}></Route>
+        <Route path="friends" element={<Friends/>}></Route>
         <Route path="messege" element={<Messege/>}></Route>
+        <Route path="groups" element={<Groups/>}></Route>
       </Route>
     </Route>
   )

@@ -4,11 +4,7 @@ import PeopleFriendRequest from './PeopleFriendRequest'
 const MemberList = () => {
   return (
     <div className='ml-4'>
-    <div>
-    <button className="font-nun font-bold text-lg py-4 px-10 bg-[#D9D9D9] text-black rounded-xl shadow-xl">
-    Member List
-    </button>
-  </div>
+    
 
   <div>
   <input

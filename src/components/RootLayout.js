@@ -8,6 +8,8 @@ import { BsGrid3X3GapFill } from "react-icons/bs";
 import { CgProfile } from "react-icons/cg";
 import HomeRightPart from "./HomeRightPart";
 import HomeLeftPart from "./HomeLeftPart";
+import { NavLink } from "react-router-dom";
+import FriendList from "./FriendList";
 
 const RootLayout = () => {
   return (
@@ -31,30 +33,30 @@ const RootLayout = () => {
 
         <Grid item xs={6}>
           <div className="flex text-[40px] gap-20 items-center ">
-            <AiFillHome />
-            <FaUserFriends />
-            <MdNotificationsActive />
-            <MdGroups />
-            <FaFacebookMessenger />
+            <NavLink to="/facebook"><AiFillHome /></NavLink>
+            <NavLink to="friends"><FaUserFriends /></NavLink>
+            <NavLink to="notification"><MdNotificationsActive /></NavLink>
+            <NavLink to="groups"><MdGroups /></NavLink>
+            <NavLink to="messege"><FaFacebookMessenger /></NavLink>
           </div>
         </Grid>
 
         <Grid item xs>
           <div className="flex text-[40px] gap-3 justify-center">
             <BsGrid3X3GapFill />
-            <FaFacebookMessenger />
-            <MdNotificationsActive />
+            <NavLink to="messege"><FaFacebookMessenger /></NavLink>
+            <NavLink to="notification"><MdNotificationsActive /></NavLink>
             <CgProfile />
           </div>
         </Grid>
       </Grid>
 
-      <Outlet />
-
       {/* <div className="flex justify-between">
         <HomeLeftPart />
         <HomeRightPart />
       </div> */}
+      <Outlet />
+
     </>
   );
 };

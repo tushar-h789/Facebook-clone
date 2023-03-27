@@ -4,11 +4,7 @@ import PeopleFriendRequest from './PeopleFriendRequest'
 const Suggestions = () => {
   return (
     <div>
-      <div>
-        <button className="py-4 px-10 bg-[#D9D9D9] text-[#4F4646] rounded-xl shadow-xl">
-          Suggestions
-        </button>
-      </div>
+      
       <div className="w-[240px] pt-4 ">
         <input
           placeholder="Search"
@@ -16,7 +12,7 @@ const Suggestions = () => {
         />
       </div>
       
-      <div>
+      <div className="bg-[#D9D9D9] text-[#4F4646] rounded-xl shadow-xl p-2">
       <PeopleFriendRequest title="Tushar" accept="Add " delete="Remove"/>
       <PeopleFriendRequest title="Tushar Imran" accept="Add" delete="Remove"/>
       <PeopleFriendRequest title="Alex Jhon" accept="Add" delete="Remove"/>

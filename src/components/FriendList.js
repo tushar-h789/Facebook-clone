@@ -1,14 +1,11 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import PeopleFriendRequest from "./PeopleFriendRequest";
 
 const FriendList = () => {
   return (
     <div>
-      <div>
-        <button className="py-4 px-10 bg-[#D9D9D9] text-[#4F4646] rounded-xl shadow-xl">
-          Friends
-        </button>
-      </div>
+      
       <div className="w-[240px] pt-4 ">
         <input
           placeholder="Search"
@@ -16,7 +13,7 @@ const FriendList = () => {
         />
       </div>
       
-      <div>
+      <div className="bg-[#D9D9D9] text-[#4F4646] rounded-xl shadow-xl p-2">
       <PeopleFriendRequest title="Imran" accept="Unfriend" delete="Block"/>
       <PeopleFriendRequest title="Tushar Imran" accept="Unfriend" delete="Block"/>
       <PeopleFriendRequest title="Alex Jhon" accept="Unfriend" delete="Block"/>

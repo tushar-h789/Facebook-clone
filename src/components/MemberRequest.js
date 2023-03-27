@@ -4,11 +4,7 @@ import PeopleFriendRequest from './PeopleFriendRequest'
 const MemberRequest = () => {
   return (
     <div>
-        <div>
-        <button className="font-nun font-bold text-lg py-4 px-10 bg-[#D9D9D9] text-black rounded-xl shadow-xl">
-        Member Request
-        </button>
-      </div>
+        
 
       <div>
       <input
@@ -18,8 +14,8 @@ const MemberRequest = () => {
       </div>
 
       <div>
-        <PeopleFriendRequest title="Facebook" accept="Accept" delete="Delete" />
-        <PeopleFriendRequest title="Facebook" accept="Accept" delete="Delete" />
+        <PeopleFriendRequest title="Instagram" accept="Accept" delete="Delete" />
+        <PeopleFriendRequest title="Twiter" accept="Accept" delete="Delete" />
         <PeopleFriendRequest title="Facebook" accept="Accept" delete="Delete" />
         <PeopleFriendRequest title="Facebook" accept="Accept" delete="Delete" />
         <PeopleFriendRequest title="Facebook" accept="Accept" delete="Delete" />
